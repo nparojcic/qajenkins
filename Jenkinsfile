@@ -5,7 +5,7 @@ pipeline {
       steps {
         sh "ls -a"
         sh "mkdir jenkinsbuild || true"
-        sh "touch buildfile.txt | mv buildfile.txt jenkinsbuild" 
+        sh "touch buildfile.txt || true | mv buildfile.txt jenkinsbuild" 
       }
     }
     stage ("Test") {
