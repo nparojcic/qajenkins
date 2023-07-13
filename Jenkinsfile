@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage("Build"){
       steps {
-        sh "ll"
+        sh "ls -a"
         sh "mkdir jenkinsbuild || true"
         sh "touch buildfile.txt | mv jenkinsbuild" 
       }
@@ -17,7 +17,7 @@ pipeline {
     stage ("Deploy") {
       steps {
         sh "pwd"
-        sh "ll"
+        sh "ls -a"
       }
     }
   }
