@@ -16,7 +16,7 @@ pipeline {
     }
     stage ("Deploy") {
       steps {
-        sh "echo Present working directory: $(pwd)"
+        sh "pwd"
         sh "ll"
       }
     }
