@@ -3,7 +3,7 @@
   stages {
     stage("Cleanup"){
       steps {
-        sh "docker system prune -a"
+        sh "echo hello"
       }
     }
     stage ("Build") {
