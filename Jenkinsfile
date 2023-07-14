@@ -8,12 +8,12 @@
     }
     stage ("Build") {
       steps {
-        sh "docker build -t --name jenkinsimage ."
+        sh "docker build -t task1image -f Dockerfile ."
       }
     }
     stage ("Deploy") {
       steps {
-        sh "docker run -d jenkinsimage --name jenkinscontainer"
+        sh "docker run -d task1image --name jenkinscontainer"
       }
     }
   }
