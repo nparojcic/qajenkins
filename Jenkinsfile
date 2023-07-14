@@ -8,7 +8,7 @@
     }
     stage ("Build") {
       steps {
-        sh "docker build -t task1image -f Dockerfile ."
+        sh "docker build -t task1image ."
       }
     }
     stage ("Deploy") {
